@@ -70,7 +70,7 @@ static ssize_t dev_read(struct file *filep, char *buffer, size_t len, loff_t *of
     int message_length;
 
     get_random_bytes(&number, sizeof(number)-1);
-    sprintf(message, "%u", number);
+    sprintf(message, "%u\n", number);
 
     message_length = strlen(message);
 

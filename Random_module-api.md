@@ -22,7 +22,7 @@ $ go version
 
 ### Prepare API
 
-initialize new go module.
+Initialize new go module.
 
 Initialize new go module in which i will handle application dependencies.
 

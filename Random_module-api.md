@@ -1,8 +1,8 @@
 # API random_module
 
-Create simple API with Golang.
+Create a simple API with Golang.
 
-Api will take all GET requests and serve JSON response with "random number" as primary result.
+The API will handle all GET requests and serve a JSON response containing a "random number" as the primary result.
 
 ## Prepare directory
 
@@ -24,9 +24,9 @@ $ go version
 
 initialize new go module.
 
-I won't reinvent the wheel, so i will need go module in wich we will handle our application dependencies.
+Initialize new go module in which i will handle application dependencies.
 
-I will use `github.com/julienschmidt/httprouter` for simple http routes.
+I will use `github.com/julienschmidt/httprouter` for simple HTTP routes.
 
 ```bash
 $ go mod init random_module/api-service
@@ -35,7 +35,7 @@ $ go mod init random_module/api-service
 
 [random_module-api/main.go](random_module-api/main.go)
 
- - To read from our `random_module` kernel module simple `os.Open` will be used.
+ - To read from our `random_module` kernel module, we will use basic `os.Open`.
 
 ```go
 // Try to open random module device output.
@@ -46,7 +46,7 @@ if err != nil {
 }
 ```
 
- - After we read first line, file is closed.
+ - After we read first line, the file is closed.
 
 ```go
 // Read single line from random module output.
@@ -64,13 +64,12 @@ file.Close()
 
  ## API Implement test
 
-To implement test for this simple API i will use library.
-(different lib from our main server lib - intentionaly)
+To implement a test for this simple API, I will use a different library from our main server library intentionally:
 `github.com/gofiber/fiber/v2`
 
-In GO test are implemented by creating a test version of a testing script with "_test" suffix.
+In Go, tests are implemented by creating a testing version of a script with the "_test" suffix.
 
-  - Script `main_test.go` is created.
+  - The script `main_test.go` is created.
 
 ![](attachments/Clipboard_2024-09-22-11-33-23.png)
 
@@ -79,8 +78,7 @@ In GO test are implemented by creating a test version of a testing script with "
 
 ### GOlang version
 
-official repos do not offer latest golang version needed to install known libraries.
-To install one of the latest version of golang you need to compile it yourself.
+Official repositories do not offer the latest Golang version needed to install known libraries. To install one of the latest versions of Golang, you need to compile it yourself.
 
  - get latest arm32 version
 
@@ -92,7 +90,6 @@ To install one of the latest version of golang you need to compile it yourself.
 ```bash
 sudo tar -C /usr/local -xzf go1.22.7.linux-armv6l.tar.gz
 ```
-
 
  - Add unpacked version to PATH
 

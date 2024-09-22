@@ -62,7 +62,43 @@ file.Close()
 ![](attachments/Clipboard_2024-09-21-21-23-24.png)
 
 
- 
+ ## API Implement test
+
+To implement test for this simple API i will use library.
+(different lib from our main server lib - intentionaly)
+`github.com/gofiber/fiber/v2`
+
+In GO test are implemented by creating a test version of a testing script with "_test" suffix.
+
+  - Script `main_test.go` is created.
+
+![](attachments/Clipboard_2024-09-22-11-33-23.png)
+
+
+## Reflections
+
+### GOlang version
+
+official repos do not offer latest golang version needed to install known libraries.
+To install one of the latest version of golang you need to compile it yourself.
+
+ - get latest arm32 version
+
+ ```bash
+ /golang-v1.22.7 $ wget https://go.dev/dl/go1.22.7.linux-armv6l.tar.gz
+ ```
+ - Unpack current version
+
+```bash
+sudo tar -C /usr/local -xzf go1.22.7.linux-armv6l.tar.gz
+```
+
+
+ - Add unpacked version to PATH
+
+ ```bash
+ export PATH="/usr/local/go/bin:$PATH"
+ ```
 
 
 

@@ -46,7 +46,7 @@ if err != nil {
 }
 ```
 
- - After we read first line, the file is closed.
+ - After we read the first line, the file is closed.
 
 ```go
 // Read single line from random module output.

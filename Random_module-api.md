@@ -78,7 +78,7 @@ In Go, tests are implemented by creating a testing version of a script with the 
 
 ### GOlang version
 
-Official repositories do not offer the latest Golang version needed to install known libraries. To install one of the latest versions of Golang, you need to compile it yourself.
+Official repositories do not offer the latest Golang version needed to install known libraries. To install one of the latest versions of Golang, you need to download it yourself.
 
  - get latest arm32 version
 

@@ -40,3 +40,11 @@ Write a simple API that serves data from the kernel device built and deployed in
 ### random_module API
 
 [Simple GO API](Random_module-api.md)
+
+### API example
+
+Current API and kernel module is active on real-life Raspberry Pi Zero trough: 
+http://randomnumber.dataio.cloud/number
+
+
+![](attachments/20240923_201108.jpg)

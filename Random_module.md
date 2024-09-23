@@ -68,7 +68,7 @@ $ sudo rmmod random_module.ko
 Write a simple pseudo-random number generator and add this module to the kernel. 
 This random generator will be created as a character device.
 
-  - The Folder `random_modulde` contains both the `Makefile` and `random_module.c` file.
+  - The Folder [random_modulde](random_module) contains both the `Makefile` and `random_module.c` file.
   - Make the random_module kernel module and add it to the kernel using `insmod`.
   - Add new characer device using `mknod`
 
@@ -100,6 +100,7 @@ $ dmesg -w
 ## Cross compile random_module
 
 Using another machine, we will prepare the development environment and compile the `random_module.c` kernel module for the Raspberry Pi.
+Source code is available in folder: [random_modulde-cc](random_module-cc)
 
 Host machine is Ubuntu 22.04.4 LTS with AMD Ryzen CPU and 16GB RAM.
 

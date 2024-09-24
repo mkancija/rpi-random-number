@@ -34,7 +34,7 @@ cd /media/kanc/20210324_4TB1/Software/raspberry_pi/
 git clone --depth=1 https://github.com/raspberrypi/linux
 ```
 
-To cross compile raspberry pi kernel (debian) we need suatible host machine (debian, or ubuntu).
+To cross compile raspberry pi kernel (debian) we need suitable host machine (debian, or ubuntu).
 For this assigment we will use Ubuntu 
 
 ```bash
@@ -91,13 +91,12 @@ nproc
 make -j16 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs
 ```
 
-You can compile modules separetaly:
+You can compile modules separately:
 
  - zImage
  - modules
  - dtbs
 
-(Sometimes for different device i got error for different reasons.)
 
 ```bash
 make -j16 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage
@@ -105,7 +104,7 @@ make -j16 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- modules
 make -j16 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- dtbs
 ```
 
-First two steps will take from minute to five minutes depending of a system you are compiling on.
+First two steps will take one minute to five minutes depending of a system you are compiling on.
 
 ## Prepare kernel files
 
